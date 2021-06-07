@@ -58,7 +58,7 @@ function App() {
   return (
     <>
       <header>
-                <Grid
+        <Grid
           container
           component={Paper}
           elevation={0}
@@ -67,23 +67,23 @@ function App() {
             root: classes.footer,
           }}
         >
-          <Typography variant="h2" color={"textSecondary"}>My TODO App</Typography>
-
+          <Typography variant="h2" color={"textSecondary"}>
+            My TODO App
+          </Typography>
         </Grid>
       </header>
 
       <main>
         <Box width="40%" height="50%" mx="auto" p={6}>
-            <Typography variant="h5"  >
-              To-Do-App.
-              <TodoList
-                todos={todos}
-                toggleComplete={toggleComplete}
-                removeNote={removeNote}
-                addNote={AddNote}
-              />
-            </Typography>
-  
+          <Typography variant="h5" data-testid="todolist">
+            To-Do-App.
+            <TodoList
+              todos={todos}
+              toggleComplete={toggleComplete}
+              removeNote={removeNote}
+              addNote={AddNote}
+            />
+          </Typography>
         </Box>
       </main>
 

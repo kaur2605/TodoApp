@@ -25,13 +25,15 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     root: {
       maxWidth: 345,
-            display: "flex",
-            flexDirection: "column",
+      border: "none",
+      boxShadow: "none",
     },
     details: {
       display: "flex",
       flexDirection: "column",
-       
+      backgroundColor: "#DCDCDC",
+      marginBottom: 10,
+      margin: theme.spacing(1),
     },
   })
 )
@@ -81,7 +83,7 @@ export const TodoList: React.FC<TodoListProps> = ({
           value={newDesc}
           onChange={handleDesc}
         />
-        <Box my={2}>
+        <Box my={2} m>
           <Button
             variant="contained"
             color="primary"
