@@ -100,12 +100,12 @@ export const TodoList: React.FC<TodoListProps> = ({
             <CardContent data-testid="addtitle">
               <Typography gutterBottom variant="h5" component="h2">
                 <label className={todo.complete ? "complete" : undefined}>
-                  {todo.title}
                   <input
                     type="checkbox"
                     onChange={() => toggleComplete(todo)}
                     checked={todo.complete}
                   />
+                  {todo.title}
                 </label>
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">

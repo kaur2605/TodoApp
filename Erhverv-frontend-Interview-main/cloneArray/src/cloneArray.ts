@@ -1,8 +1,6 @@
-export function cloneArray(arr: []) {
-  
-  const arr2 = [...arr]
-  return arr2;
-  
+export function cloneArray(arr: any[]): any[] {
+  return [...arr]
 }
 
-cloneArray([])
+cloneArray([1, 3, 4])
+cloneArray(["hi", "fds", "sfd"])

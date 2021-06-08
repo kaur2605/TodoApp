@@ -1,10 +1,8 @@
 .complete {
   text-decoration: line-through;
 }
-card {
-  background-color: rgb(19, 16, 16);
-}
-
-TextField {
-  margin-top: 3rem;
+input {
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
 }

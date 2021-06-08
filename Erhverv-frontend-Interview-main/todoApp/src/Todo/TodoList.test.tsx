@@ -46,14 +46,14 @@ test("creating  new Note successfully ", () => {
   fireEvent.change(newTitle, { target: { value: "Learn new framework" } })
   fireEvent.change(newDesc, { target: { value: "details descriptions here" } })
 
-fireEvent.click(addNote)
+  fireEvent.click(addNote)
 
-
-  expect(props.addNote).toHaveBeenCalledWith("Learn new framework","details descriptions here" )
+  expect(props.addNote).toHaveBeenCalledWith(
+    "Learn new framework",
+    "details descriptions here"
+  )
   expect(newTitle).toBeInTheDocument()
   expect(newDesc).toBeInTheDocument()
-  
-    
 
   expect(todos.length).toBe(0)
 })
